@@ -25,7 +25,7 @@ thetafirst = [0;theta(2:end,:)];
 
 J = (1/(2*m))*(sum((h-y).^2) + lambda*sum(thetafirst.^2));
 
-grad = (X' * (h - y)) * (1/m) .+ (lambda*thetafirst/m);
+grad = (X' * (h - y)) * (1/m) + (lambda*thetafirst/m);
 
 
 

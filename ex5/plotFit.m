@@ -10,6 +10,7 @@ hold on;
 % We plot a range slightly bigger than the min and max values to get
 % an idea of how the fit will vary outside the range of the data points
 x = (min_x - 15: 0.05 : max_x + 25)';
+%'
 
 % Map the X values 
 X_poly = polyFeatures(x, p);
